@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.primary-nav[data-visible="true"] {
+    transform: translateX(0%);
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+@media (max-width: 35rem) {
+    .primary-nav {
+        position: fixed;
+        z-index: 1000;
+        inset: 0 0 30% 20%;
+        list-style: none;
+        padding: min(20rem, 15vh) 2rem;
+        margin: 0;
+        flex-direction: column;
+        transform: translateX(100%);
+        transition: transform 500ms ease-in-out;
+        gap: 1.5rem;
+    }
+}

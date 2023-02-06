@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+       <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <!-- Icon Packages -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="https://kit.fontawesome.com/36be795396.js" crossorigin="anonymous"></script>
+       <!-- Tailwind CSS -->
+        <script src="https://cdn.tailwindcss.com"></script>
+        <title>Space Junk Removal</title>
+    </head>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="z-10 p-5 top-0 absolute w-full bg-white shadow-lg shadow-gray-500 border-b-2  border-black md:flex md:items-center md:justify-between ">
+            <div class="flex justify-between items-cener ">
+                <span class="text-2xl font-[Poppins] cursor-pointer">
+                    <a href="/index.html">
+                        <img src="/src/assets/SpaceJunkRemoval.png" class="h-24 inline " />
+                    </a>
+                </span>
+                <span class="text-5xl cursor-pointer mx-2 m-auto md:hidden block">
+                    <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
+                </span>
+            </div>
+            
+            <ul class="md:flex items-center z-[1]] absolute md:z-auto md:static bg-white w-full border-t-2 border-black md:border-none left-0 pt-5 pb-8 md:w-auto md:py-4 md:pl-0 pl-7 md:opacity-100 opacity-0 top-[-400px] transition-all ease-in-out duration-500">
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="/" class="text-xl text-[#2192FF] hover:font-bold hover:underline hover:scale-105 duration-500">HOME</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="/pages/services.html" class="text-xl text-[#2192FF] hover:font-bold hover:underline hover:scale-105 duration-500">SERVICES</a>
+                </li>
+                <li class="mx-4 my-6 md:my-0">
+                    <a href="/pages/contact.html" class="text-xl text-[#2192FF] hover:font-bold hover:underline hover:scale-105 duration-500">CONTACT</a>
+                </li>
+                <button class="bg-[#2192FF] text-white font-semibold text-xl px-3 py-2 rounded-full mx-4 hover:scale-105 duration-300 shadow shadow-gray-500">
+                    <a href="tel:+18647483250">(864) 748-5230</a>
+                </button>
+            </ul>
+        </nav>
+    </header>
+        
+        <script>
+            function Menu(e) {
+                let list = document.querySelector('ul');
+    
+                e.name === 'menu' ? (e.name = "close", list.classList.add('top-[135px]'), list.classList.add('opacity-100')) : (e.name = "menu", list.classList.remove('top-[135px]'), list.classList.remove('opacity-100')) 
+            }
+        </script>
+
+<!-- Main Section for Services -->
+<body>
+    <main class='bg-gradient-to-br from-[#2192FF] to-blue-200'>
+
+        <!-- Top Call Buttons -->
+        <div class='text-4xl flex flex-col lg:flex-row lg:justify-center lg:gap-10 items-center m-auto pt-48 pb-20'>
+            <button class=' bg-white text-black rounded-lg px-6 py-2 shadow-lg shadow-gray-500'>Call today to schedule!</button>
+            <button class='bg-[#2192FF] text-white rounded-lg mt-5 md:mt-10 lg:mt-0 px-6 py-2 shadow-lg shadow-gray-500 hover:scale-105 duration-500'><a href='tel:+18647485230'> (864) 748-5230</a> </button>
+        </div>
+        
+        <!-- Services Offered -->
+        <h1 class="text-4xl font-bold underline text-white text-center pb-10 ">Services We Offer</h1>
+    
+        <div class="block md:grid md:grid-cols-2 lg:grid-cols-3 gap-5 text-center px-10 py-5">
+    
+            <div class='mb-10 md:grid'>
+                <h2 class='text-blue-700 font-bold text-lg mb-3 lg:mb-1'>Home and Garage Clean Out</h2>
+                <img
+                    src="/src/assets/garagecleanout.jpeg"
+                    alt='Garage junk'
+                    class='w-[300px] h-[200px] priority hover:scale-105 shadow-lg shadow-gray-500 items-center flex flex-center m-auto'
+                />
+                <p class='text-black text-sm mt-5'>Moving Clean out, Eviction Clean Out, Hoarder Clean Out</p>
+            </div>
+    
+            <div class='mb-10 md:grid '>
+                <h2 class='text-blue-700 mb-3 font-bold text-lg lg:mb-[-1rem]'>Storage Unit Clean Out</h2>
+                <img
+                    src="/src/assets/storagejunk.jpg" 
+                    alt='Storage Unit junk'
+                    class='w-[300px] h-[200px] priority hover:scale-105 shadow-lg shadow-gray-800 items-center flex flex-center m-auto'
+                />
+                <p class='text-black text-sm mt-3'>Storage Unit Clean Out</p>
+            </div>
+    
+            <div class='mb-10 md:grid '>
+                <h2 class='text-blue-700 font-bold text-lg mb-3 lg:mb-5'>Furniture Removal</h2>
+                <Image
+                    src="/src/assets/furnitureremoval.png"
+                    alt='Furniture junk'
+                    class='w-[300px] h-[200px] priority hover:scale-105 shadow-lg shadow-gray-800 items-center flex flex-center m-auto'
+                />
+                <p class='text-black text-sm mt-3 items-end px-20 md:px-0'>Couchs, Sectionals, Love Seats, TV Stands, Dining Room tables & chairs, Mattresses, Box Springs, and etc.</p>
+            </div>
+            <div class='mb-10 md:grid '>
+                <h2 class='text-blue-700 font-bold text-lg mb-3'>Applicances Removal</h2>
+                <div class="p-3">
+                    <img
+                        src="/src/assets/appliance.jpg"
+                        alt='Appliance junk'
+                        class='w-[300px] h-[200px] priority hover:scale-105 shadow-lg shadow-gray-800 items-center flex flex-center m-auto'
+                    />
+                </div>
+                <p class='text-black text-sm mt-3'>Washer/Dryer, Refrigerator, Dishwasher, and Microwave</p>
+            </div>
+            <div class='mb-10 md:grid '>
+                <h2 class='text-blue-700 font-bold text-lg mb-3'>Construction Debris Removal</h2>
+                <Image
+                    src="/src/assets/constuctionwaste.jpg"
+                    alt='Construction debris'
+                    class='w-[300px] h-[200px] priority hover:scale-105 shadow-lg shadow-gray-800 items-center flex lg:mt-5 flex-center m-auto'
+                />
+                <p class='text-black text-sm mt-3 px-20 md:px-0'>Pick-up & haul away only: Carpet, Hardwood flooring, Laminate flooring, Tile, Sheetrock/Drywall, Wood, and Roof Shingles</p>
+            </div> 
+            <div class='mb-10 md:grid '>
+                <h2 class='text-blue-700 font-bold text-lg mb-3'>Yard Debris Removal</h2>
+                <img
+                    src="/src/assets/yard-waste.jpg"
+                    alt='Yard debris'
+                    class='w-[300px] h-[200px] priority hover:scale-105 mt-2 items-center flex flex-center m-auto shadow-lg shadow-gray-800'
+                />
+                <p class='text-black text-sm mt-7 items-end px-20 md:px-0'>Removal Only: Trees, Brushes, Limbs, Leaves, and etc.</p>
+            </div>
+            <div class='mb-10 md:grid md:col-start-1 md:col-span-2 lg:col-start-1 lg:col-span-3'>
+                <h2 class='text-blue-700 font-bold text-lg mb-3'>Demo Debris Removal</h2>
+                <img
+                    src="/src/assets/demo.jpg"
+                    alt='Demo debris'
+                    class='w-[300px] h-[200px] priority hover:scale-105 items-center flex flex-center m-auto shadow-lg shadow-gray-800'
+                />
+                <p class='text-black text-sm mt-3 px-20 md:px-0 md:w-[50%] lg:w-[30%] flex justify-center m-auto text-center '>Removal Only: Flooring (carpet, hardwood, laminate, tile), Full Kitchen Demo, Full Bathroom Demo, Shed, and Hot tub</p>
+        </div>
+    
+        <!-- {/* Quote Button & Not Allowed Description */} -->
+        <div class='md:grid md:col-start-1 md:col-span-2 lg:col-start-1 lg:col-span-3 text-center mt-8'>
+            <div>
+                <button 
+                    class='bg-[#2192FF] text-white shadow-lg shadow-gray-500 text-xl py-5 px-14 rounded-lg my-3 hover:scale-105 duration-500'>
+                        <a href='/pages/contact.html'>
+                            Click Here for a <span class='font-bold'> FREE</span> Estimate
+                        </a>
+                </button> 
+            </div>
+            <div>
+                <h3 class='font-bold text-4xl mt-14 items-center'>Items We Do Not Accept!</h3>
+                <p class="md:px-32 pt-6 mb-20">At the moment we currently do NOT remove the following items: <span class='font-bold'> concrete, rock, shell, dirt, and chemicals</span>. If there are any items you are questioning, please give us a call and ask!</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="bg-white min-w-[100%] sticky py-5 flex flex-col items-center justify-center mx-0 px-0 border-t-2 border-black ">
+       <div class="ml-[-1.5rem] pt-3 ">
+           <a href="/index.html">
+               <img src="/src/assets/SpaceJunkRemoval.png" alt="logo" class="w-[200px] h-[100px] hover:scale-110 duration-300">
+           </a>      
+       </div>
+       <h2 class="text-[#2192FF] pt-[-2em] font-bold pb-3">Space Junk Removal</h2>
+       <a href="mailto:spacejunkremoval@gmail.com" class="pb-3">spacejunkremoval@gmail.com</a>
+       <a href="tel:+18647485230" class="pb-3">(864) 748-5230</a>
+       <div class="flex flex-row justify-evenly pb-3">
+           <a href="https://www.facebook.com/spacejunkremoval">
+               <i class="fa-brands fa-facebook-f text-3xl text-[#4267B2] hover:scale-110 duration-300"></i>
+           </a>
+           <a href="https://www.instagram.com/space_junk_removal/?hl=en">
+               <i class="fa-brands fa-instagram pl-4 pr-4 text-3xl text-[#405DE6] hover:scale-110 duration-300"></i>
+           </a>
+           <a href="https://www.linkedin.com/company/space-junk-removal/">
+               <i class="fa-brands fa-linkedin-in text-3xl text-[#0072b1] hover:scale-110 duration-300"></i>
+           </a>
+       </div>
+       <span class="p-3">Copyright© 2023 Space Junk Removal, LLC</span>
+    
+    </footer>
+</body>
+
+</html>
